@@ -9,6 +9,20 @@ NOTES:
 2. Because the JSON may include inline JS, it does not necessarily conform to the JSON spec
 3. Because this content is taken straight from the Retool IDE, data and layout javascript objects may not conform to the JSON spec (e.g. unquoted keys)
 
+## Configuring a Chart using Plotly.js
+
+Each configuration here contains a screencap of the visualization, and files containing JSON values that can be used
+
+Not all files are present for every vis, but where available they should be used as follows:
+
+data.json: add to the Data field in the Chart component (after selecting the Plotly JSON option)
+layout.json: add to the Layout field in the Chart component (after selecting the Plotly JSON option)
+temp_state.json: create a temp variable to hold this value
+
+NOTE: if a temp_state.json file is provided, you will need to inspect data.json or layout.json to validate the correct name for the temp variable.
+
+![Configuring The Chart Component](docs/configuring_a_plotly_chart.png)
+
 ## Plotly.js configurations
 
 [Bubble Chart](plotly_component/bubble_chart/)
