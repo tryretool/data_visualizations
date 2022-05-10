@@ -70,7 +70,7 @@ ___
 ___
 [Gauge Chart](plotly_component/gauge_chart/)
 
-![Gauge Chart](plotly_component/gauge_chart/guage_chart.png)
+![Gauge Chart](plotly_component/gauge_chart/gauge_chart.png)
 ___
 [Line Chart](plotly_component/line_chart/)
 
