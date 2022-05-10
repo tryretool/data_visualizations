@@ -15,9 +15,9 @@ Each configuration here contains a screencap of the visualization, and files con
 
 Not all files are present for every vis, but where available they should be used as follows:
 
-- data.json: add to the Data field in the Chart component (after selecting the Plotly JSON option)
-- layout.json: add to the Layout field in the Chart component (after selecting the Plotly JSON option)
-- temp_state.json: create a temp variable to hold this value
+- __data.json__: add to the Data field in the Chart component (after selecting the Plotly JSON option)
+- __layout.json__: add to the Layout field in the Chart component (after selecting the Plotly JSON option)
+- __temp_state.json__: create a temp variable to hold this value
 
 NOTE: if a temp_state.json file is provided, you will need to inspect data.json or layout.json to validate the correct name for the temp variable.
 
