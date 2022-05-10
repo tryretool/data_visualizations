@@ -6,7 +6,8 @@ Examples of what can be achieved through either:
 
 NOTES: 
 1. This repo is intended for examples that can be configured entirely within the Retool IDE. It does not include custom components with a complete web bundling process to generate a single js file.
-2. Because the JSON may include inline JS, it does not necessarily confirm to the JSON spec
+2. Because the JSON may include inline JS, it does not necessarily conform to the JSON spec
+3. Because this content is taken straight from the Retool IDE, data and layout javascript objects may not conform to the JSON spec (e.g. unquoted keys)
 
 ## Plotly.js configurations
 
