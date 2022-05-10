@@ -1,0 +1,21 @@
+[{
+    type: 'scattergeo',
+    mode: 'markers',
+    locations: ['FRA', 'DEU', 'RUS', 'ESP', 'ISR', "USA", "ARG", "BRA", "AUS", "CHN", "EGY", "KOR", 'SWE', "MEX", "CAN", "CHL", "JPN", "SAU", "SDN", "CUB", "POL","MLI","LBR"],
+    marker: {
+        size: [20, 30, 15, 10, 9,39,9,22,12,40,11,12,5,12,12,5,53,24,22,8,5,12,14],
+        color: [10, 20, 40, 50, 1,30,5,15,12,22,44,11,5,32,12,21,44,30,12,50,12,40,33],
+        cmin: 0,
+        cmax: 50,
+        colorscale: 'Reds',
+        colorbar: {
+            title: 'Waste rate',
+            ticksuffix: '%',
+            showticksuffix: 'last'
+        },
+        line: {
+            color: 'black'
+        }
+    },
+    name: 'europe data'
+}]

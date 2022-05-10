@@ -1,0 +1,50 @@
+{
+    "title": "P&L 2018",
+    "font": {
+      "family": "Inter",
+      "color": "#979797"
+    },
+    "xaxis": {
+      "title": "",
+      "type": "-",
+      "tickformat": "",
+      "automargin": true,
+      "fixedrange": true,
+      "gridcolor": "#fff",
+      "zerolinecolor": "#DEDEDE"
+    },
+    "yaxis": {
+      "title": "",
+      "type": "linear",
+      "tickformat": "",
+      "automargin": true,
+      // "fixedrange": true,
+      "range":[0,180],
+      "gridcolor": "#DEDEDE",
+      "zerolinecolor": "#DEDEDE"
+    },
+    "showlegend": false,
+    "legend": {
+      "xanchor": "center",
+      "x": 0.45,
+      "y": -0.2,
+      "orientation": "h"
+    },
+    "margin": {
+      "l": 25,
+      "r": 25,
+      "t": 45,
+      "b": 25,
+      "pad": 1
+    },
+    "hovermode": "closest",
+    "hoverlabel": {
+      "bgcolor": "#000",
+      "bordercolor": "#000",
+      "font": {
+        "color": "#fff",
+        "family": "Inter",
+        "size": 12
+      }
+    }
+  }

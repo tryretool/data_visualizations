@@ -1,0 +1,35 @@
+[
+    {
+      "name": "value",
+      "x": {{formatDataAsObject(getData.data)['date']}},
+      "y": {{formatDataAsObject(getData.data)['value']}},
+      "type": "line",
+      "hovertemplate": "<b>%{fullData.name}:</b> %{y}<extra></extra>",
+      "transforms": [
+        {
+          "type": "groupby",
+          "groups": {{formatDataAsObject(getData.data)['countryiso3code']}},
+          "styles": []
+        },
+        {
+          "type": "sort",
+          "target": {{formatDataAsObject(getData.data)['date']}},
+          "order": "ascending"
+        },
+        {
+          "type": "aggregate",
+          "groups": {{formatDataAsObject(getData.data)['date']}},
+          "aggregations": [
+            {
+              "target": "y",
+              "func": "sum",
+              "enabled": true
+            }
+          ]
+        }
+      ],
+       "marker":{"size":5},
+        "line":{"width":2},
+      "mode": "lines+markers"
+    }
+  ]

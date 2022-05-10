@@ -1,0 +1,68 @@
+{
+    "title": {
+      "text": "<b>{{indicatorSelect.displayValue}}</b>",
+      "font": {
+        "color": "#3D3D3D",
+        "size": 16
+      }
+    },
+    "font": {
+      "family": "Inter",
+      "color": "#979797"
+    },
+    "showlegend": true,
+    "legend": {
+      "xanchor": "left",
+      "orientation": "v",
+      "x": 1.05,
+      "y": 0.5
+    },
+    "margin": {
+      "l": 16,
+      "r": 24,
+      "t": 80,
+      "b": 32,
+      "pad": 2
+    },
+    "hovermode": "closest",
+    "hoverlabel": {
+      "bgcolor": "#000",
+      "bordercolor": "#000",
+      "font": {
+        "color": "#fff",
+        "family": "Inter",
+        "size": 12
+      }
+    },
+    "clickmode": "select+event",
+    "dragmode": "select",
+    "xaxis": {
+      "title": {
+        "text": "",
+        "standoff": 6,
+        "font": {
+          "size": 12
+        }
+      },
+      "type": "-",
+      "tickformat": "",
+      "automargin": true,
+      "fixedrange": true,
+      "gridcolor": "#fff",
+      "zerolinecolor": "#fff"
+    },
+    "yaxis": {
+      "title": {
+        "text": "",
+        "standoff": 6,
+        "font": {
+          "size": 12
+        }
+      },
+      "type": "linear",
+      "tickformat": "",
+      "automargin": true,
+      "fixedrange": true,
+      "zerolinecolor": "#DEDEDE"
+    }
+  }

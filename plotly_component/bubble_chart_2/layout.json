@@ -1,0 +1,34 @@
+{
+    "title": "",
+    "font": {
+      "family": "Inter"
+    },
+    "xaxis": {
+      "title": "",
+      "type": "-",
+      "tickformat": "",
+      "automargin": true,
+      "fixedrange": true
+    },
+    "yaxis": {
+      "title": "",
+      "type": "log",
+      "tickformat": "",
+      "automargin": true,
+      "fixedrange": true
+    },
+    "showlegend": true,
+    "legend": {
+      "xanchor": "left",
+      "x": 1.05,
+      "y": 0.5
+    },
+    "hovermode": "x unified",
+    "margin": {
+      "l": 25,
+      "r": 25,
+      "t": 25,
+      "b": 25
+    },
+    "scrollZoom":true
+  }

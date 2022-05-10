@@ -1,0 +1,71 @@
+[
+    {
+      "type": "funnel",
+      "name": "Montreal",
+      "y": [
+        "Website visit",
+        "Downloads",
+        "Potential customers",
+        "Requested price",
+        "invoice sent",
+        "closed deals"
+      ],
+      "x": [
+        120,
+        60,
+        30,
+        20,
+        5,
+        1
+      ],
+      "textinfo": "value+percent initial",
+      "hoverinfo": "none"
+    },
+    {
+      "type": "funnel",
+      "name": "Toronto",
+      "y": [
+        "Website visit",
+        "Downloads",
+        "Potential customers",
+        "Requested price",
+        "invoice sent",
+        "closed deals"
+      ],
+      "x": [
+        100,
+        60,
+        40,
+        30,
+        20,
+        4
+      ],
+      "textposition": "inside",
+      "textinfo": "value+percent previous",
+      "hoverinfo": "none"
+    },
+    {
+      "type": "funnel",
+      "name": "Vancouver",
+      "y": [
+        "Website visit",
+        "Downloads",
+        "Potential customers",
+        "Requested price",
+        "invoice sent",
+        "closed deals"
+      ],
+      "x": [
+        90,
+        70,
+        50,
+        30,
+        10,
+        8
+      ],
+      "textposition": "outside",
+      "textinfo": "value+percent total",
+      "hoverinfo": "none"
+    }
+  ]
+  

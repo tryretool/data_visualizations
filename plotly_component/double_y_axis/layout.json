@@ -1,0 +1,19 @@
+{
+    title: 'Double Y Axis Example',
+    yaxis: {title: 'yaxis title'},
+    yaxis2: {
+      title: '% of goal',
+      titlefont: {color: 'rgb(255, 132, 0)'},
+      tickfont: {color: 'rgb(255, 132, 0)'},
+      overlaying: 'y',
+      side: 'right',
+        tickformat: ',.0%',
+      range: [0,1.2]
+    },
+     "legend": {
+      "xanchor": "center",
+      "x": 0.45,
+      "y": -0.2,
+      "orientation": "h"
+    },
+  }

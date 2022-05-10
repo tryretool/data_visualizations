@@ -1,0 +1,79 @@
+[
+    {
+      "name": "gdpPercap",
+      "x": {{formatDataAsObject(_.filter(gapminderData.data,(d) => {return d.year == select1.value})) ['lifeExp']}},
+      "y": {{formatDataAsObject(_.filter(gapminderData.data,(d) => {return d.year == select1.value})) ['gdpPercap']}},
+      "type": "scatter",
+          "marker": {
+          "size": {{formatDataAsObject(_.filter(gapminderData.data,(d) => {return d.year == select1.value})) ['pop']}},
+      "sizeref": 200000,
+      "sizemode": "area"
+      
+        },
+      "transforms": [
+        {
+          "type": "groupby",
+          "groups": {{formatDataAsObject(_.filter(gapminderData.data,(d) => {return d.year == select1.value})) ['continent']}},
+          "styles": [
+            {
+              "target": {{_.uniq(formatDataAsObject(_.filter(gapminderData.data,(d) => {return d.year == select1.value})) ['continent'])[0]}},
+              "value": {
+                "marker": {
+                  "color": "#C15627"
+                }
+              }
+            },
+            {
+              "target": {{_.uniq(formatDataAsObject(_.filter(gapminderData.data,(d) => {return d.year == select1.value})) ['continent'])[1]}},
+              "value": {
+                "marker": {
+                  "color": "#247BC7"
+                }
+              }
+            },
+            {
+              "target": {{_.uniq(formatDataAsObject(_.filter(gapminderData.data,(d) => {return d.year == select1.value})) ['continent'])[2]}},
+              "value": {
+                "marker": {
+                  "color": "#55A874"
+                }
+              }
+            },
+            {
+              "target": {{_.uniq(formatDataAsObject(_.filter(gapminderData.data,(d) => {return d.year == select1.value})) ['continent'])[3]}},
+              "value": {
+                "marker": {
+                  "color": "#E9AB11"
+                }
+              }
+            },
+            {
+              "target": {{_.uniq(formatDataAsObject(_.filter(gapminderData.data,(d) => {return d.year == select1.value})) ['continent'])[4]}},
+              "value": {
+                "marker": {
+                  "color": "#7E63C2"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "target": {{formatDataAsObject(_.filter(gapminderData.data,(d) => {return d.year == select1.value})) ['lifeExp']}},
+          "order": "ascending"
+        },
+        {
+          "type": "aggregate",
+          "groups": {{formatDataAsObject(_.filter(gapminderData.data,(d) => {return d.year == select1.value})) ['lifeExp']}},
+          "aggregations": [
+            {
+              "target": "y",
+              "func": "sum",
+              "enabled": true
+            }
+          ]
+        }
+      ],
+      "mode": "markers"
+    }
+  ]

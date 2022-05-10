@@ -1,0 +1,59 @@
+{
+    "ternary": {
+        "sum": 100,
+        "aaxis": {
+            "tickfont": {
+                "size": 15
+            },
+            "tickcolor": "rgba(0, 0, 0, 0)",
+            "ticklen": 5,
+            "showline": true,
+            "showgrid": true,
+            "title": {
+                "font": {
+                    "size": 20
+                },
+                "text": "Journalist"
+            },
+            "tickangle": 0
+        },
+        "baxis": {
+            "min": 20,
+            "tickfont": {
+                "size": 15
+            },
+            "tickcolor": "rgba(0, 0, 0, 0)",
+            "ticklen": 5,
+            "showline": true,
+            "showgrid": true,
+            "title": {
+                "font": {
+                    "size": 20
+                },
+                "text": "<br>Developer"
+            },
+            "tickangle": 45
+        },
+        "caxis": {
+            "tickfont": {
+                "size": 15
+            },
+            "tickcolor": "rgba(0, 0, 0, 0)",
+            "ticklen": 5,
+            "showline": true,
+            "showgrid": true,
+            "title": {
+                "font": {
+                    "size": 20
+                },
+                "text": "<br>Designer"
+            },
+            "tickangle": -45
+        },
+        "bgcolor": "#fff1e0"
+    },
+    "paper_bgcolor": "#fffffff",
+    "height": 450,
+    "width": 700,
+    "autosize": false
+}
