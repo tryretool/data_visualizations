@@ -1,0 +1,18 @@
+{
+    margin: {
+      l: 130, 
+      r: 20, 
+      t: 60, 
+      b:20
+    }, 
+    width: 600, 
+    funnelmode: "stack",
+    showlegend: 'true', 
+    title: "Marketing Funnel", 
+    "legend": {
+      "xanchor": "center",
+      "x": 0.85,
+      "y": .2,
+      "orientation": "v"
+    }
+  }

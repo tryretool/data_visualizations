@@ -9,15 +9,26 @@ NOTES:
 2. Because the JSON may include inline JS, it does not necessarily conform to the JSON spec
 3. Because this content is taken straight from the Retool IDE, data and layout javascript objects may not conform to the JSON spec (e.g. unquoted keys)
 
+## Further information
+
+[Technical Webinar: Building Data-Driven Dashboards in Retool](https://www.youtube.com/watch?v=iN5nLpcu2J8&t=683s)
+
 ## Configuring a Chart using Plotly.js
 
 Each configuration here contains a screencap of the visualization, and files containing JSON values that can be used
 
 Not all files are present for every vis, but where available they should be used as follows:
 
+### Format A
+
 - __data.json__: add to the Data field in the Chart component (after selecting the Plotly JSON option)
 - __layout.json__: add to the Layout field in the Chart component (after selecting the Plotly JSON option)
 - __temp_state.json__: create a temp variable to hold this value
+
+### Format B
+- __getData.js__: create a getData JS query with the contents of this file. Set the Data option of the Chart component to {{ getData.data }}
+- __getLayout.js__: create a getLayout JS query with the contents of this file. Set the Layout option of the Chart component to {{ getLayout.data }}
+- __anyOtherFunction.js__: if there are more .js files, add them as JS queries using the same name eg 'anyOtherFunction' in this example
 
 NOTE: if a temp_state.json file is provided, you will need to inspect data.json or layout.json to validate the correct name for the temp variable.
 
@@ -25,14 +36,21 @@ NOTE: if a temp_state.json file is provided, you will need to inspect data.json 
 
 ## Plotly.js configurations
 
+[3D Chart](plotly_component/3d_chart/)
+
+![3D Chart](plotly_component/3d_chart/3d_chart.gif)
+___
 [Bubble Chart](plotly_component/bubble_chart/)
 
 ![Bubble Chart](plotly_component/bubble_chart/bubble_chart.png)
 ___
-
 [Bubble Chart 2](plotly_component/bubble_chart_2/)
 
 ![Bubble Chart 2](plotly_component/bubble_chart_2/bubble_chart_2.png)
+___
+[Bullet Chart](plotly_component/bullet_chart/)
+
+![Bullet Chart](plotly_component/bullet_chart/bullet_chart.png)
 ___
 [Double Y Axis](plotly_component/double_y_axis/)
 
@@ -45,6 +63,14 @@ ___
 [Funnel Chart](plotly_component/funnel_chart/)
 
 ![Funnel Chart](plotly_component/funnel_chart/funnel_chart.png)
+___
+[Funnel Chart 2](plotly_component/funnel_chart_2/)
+
+![Funnel Chart 2](plotly_component/funnel_chart_2/funnel_chart_2.png)
+___
+[Gauge Chart](plotly_component/gauge_chart/)
+
+![Gauge Chart](plotly_component/gauge_chart/guage_chart.png)
 ___
 [Line Chart](plotly_component/line_chart/)
 
